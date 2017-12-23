@@ -222,6 +222,29 @@ icvCalcAffineTranf2D32f(CvPoint2D32f* pts1, CvPoint2D32f* pts2, int count, CvMat
 }
 #endif
 
+/*
+Parameters:
+image – Source chessboard view. It must be an 8-bit grayscale or color image.
+patternSize – Number of inner corners per a chessboard row and column ( patternSize = cvSize(points_per_row,points_per_colum) = cvSize(columns,rows) ).
+corners – Output array of detected corners.
+flags –
+Various operation flags that can be zero or a combination of the following values:
+
+CALIB_CB_ADAPTIVE_THRESH Use adaptive thresholding to convert the image to black and white, rather than a fixed threshold level (computed from the average image brightness).
+CALIB_CB_NORMALIZE_IMAGE Normalize the image gamma with equalizeHist() before applying fixed or adaptive thresholding.
+CALIB_CB_FILTER_QUADS Use additional criteria (like contour area, perimeter, square-like shape) to filter out false quads extracted at the contour retrieval stage.
+CALIB_CB_FAST_CHECK Run a fast check on the image that looks for chessboard corners, and shortcut the call if none is found. This can drastically speed up the call in the degenerate condition when no chessboard is observed.
+
+
+
+The function attempts to determine whether the input image is a view of the chessboard pattern and locate the internal chessboard corners. 
+The function returns a non-zero value if all of the corners are found and they are placed in a certain order (row by row, left to right in every row).
+Otherwise, if the function fails to find all the corners or reorder them, it returns 0. 
+For example, a regular chessboard has 8 x 8 squares and 7 x 7 internal corners, that is, points where the black squares touch each other.
+The detected coordinates are approximate, and to determine their positions more accurately, the function calls cornerSubPix().
+You also may use the function cornerSubPix() with different parameters if returned coordinates are not accurate enough.
+
+*/
 CV_IMPL
 int cvFindChessboardCorners( const void* arr, CvSize pattern_size,
                              CvPoint2D32f* out_corners, int* out_corner_count,
@@ -234,8 +257,8 @@ int cvFindChessboardCorners( const void* arr, CvSize pattern_size,
     try
     {
     int k = 0;
-    const int min_dilations = 0;
-    const int max_dilations = 7;
+    const int min_dilations = 0; //最少膨胀次数
+    const int max_dilations = 7; //最多膨胀次数
     cv::Ptr<CvMat> norm_img, thresh_img;
 #ifdef DEBUG_CHESSBOARD
     cv::Ptr<IplImage> dbg_img;
@@ -297,6 +320,7 @@ int cvFindChessboardCorners( const void* arr, CvSize pattern_size,
         }
     }
 
+	//检查是否存在Chess board，没有chess board迅速return，否则下面程序会运行很长时间
     if( flags & CV_CALIB_CB_FAST_CHECK)
     {
         cvGetImage(img, &_img);
