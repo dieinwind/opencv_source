@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/3rdparty/zlib/CMakeLists.txt
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckFunctionExists.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckIncludeFile.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckCSourceCompiles.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckTypeSize.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckIncludeFile.cmake
+D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/3rdparty/zlib/zconf.h.cmakein

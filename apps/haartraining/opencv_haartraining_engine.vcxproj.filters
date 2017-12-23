@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\cvboost.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\cvcommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\cvhaarclassifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\cvhaartraining.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\cvsamples.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\cvsamplesoutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\_cvcommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\cvclassifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\_cvhaartraining.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\cvhaartraining.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\cvsamplesoutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\ioutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\source_code\opencv-2.4.13.4\apps\haartraining\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8F214FEE-C6B6-43C6-B39A-F3D599B7336F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{FE5A605F-B78C-44D3-9786-336870AC2028}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

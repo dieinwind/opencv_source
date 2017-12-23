@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{E0589045-1B8B-47DE-8A40-39C1E65791EA}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ocl\perf;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\video\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\calib3d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\features2d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\highgui\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\imgproc\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\flann\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\core\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ts\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ocl\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\objdetect\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ml\include;D:\machine_vision\workspace\opencv_source_proj\modules\ocl;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ocl\src;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ocl\test;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\include\opencl\1.2;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ocl\perf;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\video\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\calib3d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\features2d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\highgui\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\imgproc\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\flann\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\core\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ts\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ocl\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\objdetect\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ml\include;D:\machine_vision\workspace\opencv_source_proj\modules\ocl;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ocl\src;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ocl\test;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\include\opencl\1.2;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/ocl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../../source_code/opencv-2.4.13.4 -B../.. --check-stamp-file D:\machine_vision\workspace\opencv_source_proj\modules\ocl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/ocl/CMakeLists.txt;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ocl\CMakeLists.txt;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ocl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\machine_vision\workspace\opencv_source_proj\modules\ocl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/ocl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../../source_code/opencv-2.4.13.4 -B../.. --check-stamp-file D:\machine_vision\workspace\opencv_source_proj\modules\ocl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/ocl/CMakeLists.txt;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ocl\CMakeLists.txt;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ocl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\machine_vision\workspace\opencv_source_proj\modules\ocl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\4ea9777b64ac45517d07e6c0d4b2d51e\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/machine_vision/workspace/opencv_source_proj/CMakeFiles/4ea9777b64ac45517d07e6c0d4b2d51e/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\machine_vision\workspace\opencv_source_proj\modules\ocl\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/machine_vision/workspace/opencv_source_proj/CMakeFiles/4ea9777b64ac45517d07e6c0d4b2d51e/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\machine_vision\workspace\opencv_source_proj\modules\ocl\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/ocl/opencv_ocl.vcxproj">
+      <Project>EB0C2CCE-E6E5-4C04-B523-D194E666C367</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/ocl/opencv_perf_ocl.vcxproj">
+      <Project>0EF2BAAF-4A08-4329-8427-25D3ADA7B539</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/ocl/opencv_test_ocl.vcxproj">
+      <Project>3F423BF0-407A-4DC3-AB9E-690BEA11F7CD</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

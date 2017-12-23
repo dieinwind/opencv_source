@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=D:/machine_vision/workspace/opencv_source_proj/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/x86/vc12/lib
+includedir_old=${prefix}/include/opencv
+includedir_new=${prefix}/include
+
+Name: OpenCV
+Description: Open Source Computer Vision Library
+Version: 2.4.13.4
+Libs: -L${exec_prefix}/x86/vc12/lib -lopencv_calib3d2413 -lopencv_contrib2413 -lopencv_core2413 -lopencv_features2d2413 -lopencv_flann2413 -lopencv_gpu2413 -lopencv_highgui2413 -lopencv_imgproc2413 -lopencv_legacy2413 -lopencv_ml2413 -lopencv_nonfree2413 -lopencv_objdetect2413 -lopencv_ocl2413 -lopencv_photo2413 -lopencv_stitching2413 -lopencv_superres2413 -lopencv_ts2413 -lopencv_video2413 -lopencv_videostab2413
+Cflags: -I${includedir_old} -I${includedir_new}

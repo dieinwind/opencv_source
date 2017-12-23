@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_api.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_arithm.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_bgfg.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_blend.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_brute_force_matcher.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_calib3d.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_canny.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_color.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_fft.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_filters.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_gemm.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_imgproc.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_kalman.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_kmeans.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_match_template.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_matrix_operation.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_mean_shift.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_ml.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_moments.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_objdetect.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_optflow.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_pyramids.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_sort.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_split_merge.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_warp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\utility.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv_test_ocl_pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\test_precomp.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\test\utility.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\source_code\opencv-2.4.13.4\modules\ocl\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8F214FEE-C6B6-43C6-B39A-F3D599B7336F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{9A59168E-CC96-43CB-9022-96E085B9E6D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{18A55CBA-DA0A-4D7E-B7AA-9565C47395DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

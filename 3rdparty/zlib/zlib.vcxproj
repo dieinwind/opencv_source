@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A1A91AC6-33EA-401A-8521-D6BBDBE9E8AE}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>zlib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\machine_vision\workspace\opencv_source_proj\3rdparty\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">zlib.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">zlibd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\machine_vision\workspace\opencv_source_proj\3rdparty\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">zlib.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">zlib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\3rdparty\zlib;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\zlib;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\3rdparty\zlib;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\zlib;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\3rdparty\zlib;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\zlib;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\3rdparty\zlib;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\zlib;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\3rdparty\zlib;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\zlib;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\3rdparty\zlib;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\zlib;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/3rdparty/zlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../../source_code/opencv-2.4.13.4 -B../.. --check-stamp-file D:\machine_vision\workspace\opencv_source_proj\3rdparty\zlib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/3rdparty/zlib/CMakeLists.txt;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\zlib\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\zlib\zconf.h.cmakein;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\machine_vision\workspace\opencv_source_proj\3rdparty\zlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/3rdparty/zlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../../source_code/opencv-2.4.13.4 -B../.. --check-stamp-file D:\machine_vision\workspace\opencv_source_proj\3rdparty\zlib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/3rdparty/zlib/CMakeLists.txt;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\zlib\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\zlib\zconf.h.cmakein;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\3rdparty\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\machine_vision\workspace\opencv_source_proj\3rdparty\zlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="zconf.h" />
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\zlib.h" />
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\crc32.h" />
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\deflate.h" />
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\gzguts.h" />
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\inffast.h" />
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\inffixed.h" />
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\inflate.h" />
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\inftrees.h" />
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\trees.h" />
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\zutil.h" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\adler32.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\compress.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\crc32.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\deflate.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\gzclose.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\gzlib.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\gzread.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\gzwrite.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\inflate.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\infback.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\inftrees.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\inffast.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\trees.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\uncompr.c" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\3rdparty\zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/ZERO_CHECK.vcxproj">
+      <Project>614B0189-C7F4-43CE-8675-48BA1E5B781E</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

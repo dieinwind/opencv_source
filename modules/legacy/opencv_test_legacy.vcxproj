@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{5B21D54A-BBC9-43FA-8655-4FCBDB61FAB0}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>opencv_test_legacy</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\machine_vision\workspace\opencv_source_proj\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_test_legacy.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_test_legacyd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\machine_vision\workspace\opencv_source_proj\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_test_legacy.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_test_legacy</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\test;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\video\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\calib3d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\features2d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\highgui\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\imgproc\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\flann\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\core\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ts\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ml\include;D:\machine_vision\workspace\opencv_source_proj\modules\legacy;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\src;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4275;4589;4359</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForcedIncludeFiles>D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/legacy/test/test_precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/legacy/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\test;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\video\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\calib3d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\features2d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\highgui\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\imgproc\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\flann\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\core\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ts\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ml\include;D:\machine_vision\workspace\opencv_source_proj\modules\legacy;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\src;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\test;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\video\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\calib3d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\features2d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\highgui\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\imgproc\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\flann\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\core\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ts\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ml\include;D:\machine_vision\workspace\opencv_source_proj\modules\legacy;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\src;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\opencv_core2413d.lib;..\..\lib\Debug\opencv_flann2413d.lib;..\..\lib\Debug\opencv_imgproc2413d.lib;..\..\lib\Debug\opencv_highgui2413d.lib;..\..\lib\Debug\opencv_features2d2413d.lib;..\..\lib\Debug\opencv_calib3d2413d.lib;..\..\lib\Debug\opencv_ml2413d.lib;..\..\lib\Debug\opencv_video2413d.lib;..\..\lib\Debug\opencv_legacy2413d.lib;..\..\lib\Debug\opencv_ts2413d.lib;..\..\lib\Debug\opencv_highgui2413d.lib;..\..\lib\Debug\opencv_core2413d.lib;..\..\lib\Debug\opencv_flann2413d.lib;..\..\lib\Debug\opencv_imgproc2413d.lib;..\..\lib\Debug\opencv_highgui2413d.lib;..\..\lib\Debug\opencv_features2d2413d.lib;..\..\lib\Debug\opencv_calib3d2413d.lib;..\..\lib\Debug\opencv_video2413d.lib;..\..\lib\Debug\opencv_ml2413d.lib;..\..\lib\Debug\opencv_features2d2413d.lib;..\..\lib\Debug\opencv_flann2413d.lib;..\..\lib\Debug\opencv_highgui2413d.lib;..\..\lib\Debug\opencv_imgproc2413d.lib;..\..\lib\Debug\opencv_core2413d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>D:/machine_vision/workspace/opencv_source_proj/bin/Debug/opencv_test_legacyd.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/machine_vision/workspace/opencv_source_proj/bin/Debug/opencv_test_legacyd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\test;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\video\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\calib3d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\features2d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\highgui\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\imgproc\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\flann\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\core\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ts\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ml\include;D:\machine_vision\workspace\opencv_source_proj\modules\legacy;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\src;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4275;4589;4359</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForcedIncludeFiles>D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/legacy/test/test_precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/legacy/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\test;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\video\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\calib3d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\features2d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\highgui\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\imgproc\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\flann\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\core\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ts\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ml\include;D:\machine_vision\workspace\opencv_source_proj\modules\legacy;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\src;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\test;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\video\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\calib3d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\features2d\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\highgui\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\imgproc\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\flann\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\core\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ts\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\include;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\ml\include;D:\machine_vision\workspace\opencv_source_proj\modules\legacy;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\src;D:\machine_vision\workspace\opencv_source_proj;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\opencv_core2413.lib;..\..\lib\Release\opencv_flann2413.lib;..\..\lib\Release\opencv_imgproc2413.lib;..\..\lib\Release\opencv_highgui2413.lib;..\..\lib\Release\opencv_features2d2413.lib;..\..\lib\Release\opencv_calib3d2413.lib;..\..\lib\Release\opencv_ml2413.lib;..\..\lib\Release\opencv_video2413.lib;..\..\lib\Release\opencv_legacy2413.lib;..\..\lib\Release\opencv_ts2413.lib;..\..\lib\Release\opencv_highgui2413.lib;..\..\lib\Release\opencv_core2413.lib;..\..\lib\Release\opencv_flann2413.lib;..\..\lib\Release\opencv_imgproc2413.lib;..\..\lib\Release\opencv_highgui2413.lib;..\..\lib\Release\opencv_features2d2413.lib;..\..\lib\Release\opencv_calib3d2413.lib;..\..\lib\Release\opencv_video2413.lib;..\..\lib\Release\opencv_ml2413.lib;..\..\lib\Release\opencv_features2d2413.lib;..\..\lib\Release\opencv_flann2413.lib;..\..\lib\Release\opencv_highgui2413.lib;..\..\lib\Release\opencv_imgproc2413.lib;..\..\lib\Release\opencv_core2413.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>D:/machine_vision/workspace/opencv_source_proj/bin/Release/opencv_test_legacy.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/machine_vision/workspace/opencv_source_proj/bin/Release/opencv_test_legacy.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\source_code\opencv-2.4.13.4\modules\legacy\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/legacy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../../source_code/opencv-2.4.13.4 -B../.. --check-stamp-file D:\machine_vision\workspace\opencv_source_proj\modules\legacy\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/legacy/CMakeLists.txt;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\CMakeLists.txt;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\machine_vision\workspace\opencv_source_proj\modules\legacy\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/legacy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../../source_code/opencv-2.4.13.4 -B../.. --check-stamp-file D:\machine_vision\workspace\opencv_source_proj\modules\legacy\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/legacy/CMakeLists.txt;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\CMakeLists.txt;D:\machine_vision\workspace\opencv_source_proj\source_code\opencv-2.4.13.4\modules\legacy\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\machine_vision\workspace\opencv_source_proj\modules\legacy\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source_code\opencv-2.4.13.4\modules\legacy\test\test_precomp.hpp" />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\legacy\test\test_bruteforcematcher.cpp"  />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\legacy\test\test_em.cpp"  />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\legacy\test\test_main.cpp"  />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\legacy\test\test_nearestneighbors.cpp"  />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\legacy\test\test_optflow.cpp"  />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\legacy\test\test_pyrsegmentation.cpp"  />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\legacy\test\test_stereomatching.cpp"  />
+    <ClCompile Include="..\..\source_code\opencv-2.4.13.4\modules\legacy\test\test_subdivisions.cpp"  />
+    <ClCompile Include="opencv_test_legacy_pch.cpp" >
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/legacy/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/machine_vision/workspace/opencv_source_proj/source_code/opencv-2.4.13.4/modules/legacy/test/test_precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/ZERO_CHECK.vcxproj">
+      <Project>614B0189-C7F4-43CE-8675-48BA1E5B781E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/calib3d/opencv_calib3d.vcxproj">
+      <Project>D145BFDA-80C8-4148-80D0-1C1B5F7FAE4B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/core/opencv_core.vcxproj">
+      <Project>56080936-10C9-4B3B-8F80-8344365E37B8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/features2d/opencv_features2d.vcxproj">
+      <Project>581C67AF-EB8B-40CE-8CC8-1F5AE06DDEC6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/flann/opencv_flann.vcxproj">
+      <Project>48B7999D-BFBB-4555-8640-DF40C1D5CE19</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/highgui/opencv_highgui.vcxproj">
+      <Project>F0583667-5C4E-4CB8-8012-86D6056013D1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/imgproc/opencv_imgproc.vcxproj">
+      <Project>B5A2F304-C974-4840-9241-778D26CF972F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/legacy/opencv_legacy.vcxproj">
+      <Project>D5EC315D-2E76-46AE-9B6F-C9C91A4333A9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/ml/opencv_ml.vcxproj">
+      <Project>F0DC01CF-4E82-4059-9940-EDED281263AF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/ts/opencv_ts.vcxproj">
+      <Project>32F593CE-A692-48EE-897A-ED8BD7D6B9E9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/machine_vision/workspace/opencv_source_proj/modules/video/opencv_video.vcxproj">
+      <Project>EA4BC2AE-530B-4CBB-88F0-5BFB6E819E23</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
